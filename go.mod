@@ -1,38 +1,27 @@
 module sing-geosite
 
-go 1.18
+go 1.21
 
 require (
-	github.com/google/go-github/v49 v49.0.0
-	github.com/sagernet/sing v0.0.0-20220913004915-27ddefbb8921
-	github.com/sagernet/sing-box v1.0.6
-	github.com/sirupsen/logrus v1.9.0
+	github.com/google/go-github/v55 v55.0.0
+	github.com/sagernet/sing v0.2.12-0.20230925124400-0531fd63eaba
+	github.com/sagernet/sing-box v1.5.0
+	github.com/sirupsen/logrus v1.9.3
 	github.com/v2fly/v2ray-core/v5 v5.1.0
-	golang.org/x/oauth2 v0.0.0-20180821212333-d2e6202438be
-	google.golang.org/protobuf v1.28.1
+	google.golang.org/protobuf v1.31.0
 )
 
 require (
+	github.com/ProtonMail/go-crypto v0.0.0-20230217124315-7d5c6f04bbb8 // indirect
 	github.com/adrg/xdg v0.4.0 // indirect
-	github.com/fsnotify/fsnotify v1.5.4 // indirect
-	github.com/go-task/slim-sprig v0.0.0-20210107165309-348f09dbbbc0 // indirect
-	github.com/golang/mock v1.6.0 // indirect
-	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/cloudflare/circl v1.3.3 // indirect
+	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
-	github.com/marten-seemann/qpack v0.2.1 // indirect
-	github.com/marten-seemann/qtls-go1-18 v0.1.2 // indirect
-	github.com/marten-seemann/qtls-go1-19 v0.1.0 // indirect
-	github.com/nxadm/tail v1.4.8 // indirect
-	github.com/onsi/ginkgo v1.16.5 // indirect
-	github.com/sagernet/quic-go v0.0.0-20220818150011-de611ab3e2bb // indirect
-	github.com/sagernet/sing-dns v0.0.0-20220822023312-3e086b06d666 // indirect
-	golang.org/x/crypto v0.0.0-20220829220503-c86fa9a7ed90 // indirect
-	golang.org/x/exp v0.0.0-20220722155223-a9213eeb770e // indirect
-	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4 // indirect
-	golang.org/x/net v0.0.0-20220826154423-83b083e8dc8b // indirect
-	golang.org/x/sys v0.0.0-20220829200755-d48e67d00261 // indirect
-	golang.org/x/text v0.3.7 // indirect
-	golang.org/x/tools v0.1.11-0.20220513221640-090b14e8501f // indirect
-	google.golang.org/appengine v1.6.7 // indirect
-	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
+	github.com/miekg/dns v1.1.56 // indirect
+	github.com/sagernet/sing-dns v0.1.10-0.20230921024525-fc3e4c051ccd // indirect
+	golang.org/x/crypto v0.13.0 // indirect
+	golang.org/x/mod v0.12.0 // indirect
+	golang.org/x/net v0.15.0 // indirect
+	golang.org/x/sys v0.12.0 // indirect
+	golang.org/x/tools v0.13.0 // indirect
 )

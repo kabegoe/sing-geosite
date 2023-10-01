@@ -10,8 +10,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/google/go-github/v49/github"
-	"golang.org/x/oauth2"
+	"github.com/google/go-github/v55/github"
 	"github.com/sagernet/sing-box/common/geosite"
 	"github.com/sagernet/sing/common"
 	E "github.com/sagernet/sing/common/exceptions"
@@ -26,12 +25,7 @@ func init() {
 	accessToken, loaded := os.LookupEnv("ACCESS_TOKEN")
 	if !loaded {
 		githubToken, _ := os.LookupEnv("GITHUB_TOKEN")
-		ctx := context.Background()
-		ts := oauth2.StaticTokenSource(
-			&oauth2.Token{AccessToken: githubToken},
-		)
-		tc := oauth2.NewClient(ctx, ts)
-		githubClient = github.NewClient(tc)
+		githubClient = github.NewClient(nil).WithAuthToken(githubToken)
 		return
 	}
 	transport := &github.BasicAuthTransport{
